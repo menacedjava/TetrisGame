@@ -28,32 +28,32 @@ public class TetrisGUI extends JPanel {
 
     private final int BLOCK_SIZE = 30;
 
-//    public TetrisGUI() {
-//        setPreferredSize(new Dimension(BOARD_WIDTH * BLOCK_SIZE, BOARD_HEIGHT * BLOCK_SIZE));
-//        spawnPiece();
-//
-//        addKeyListener(new KeyAdapter() {
-//            @Override
-//            public void keyPressed(KeyEvent e) {
-//                if (gameOver) return;
-//
-//                int keyCode = e.getKeyCode();
-//                if (keyCode == KeyEvent.VK_LEFT) {
-//                    if (canMove(-1, 0)) currentX--;
-//                } else if (keyCode == KeyEvent.VK_RIGHT) {
-//                    if (canMove(1, 0)) currentX++;
-//                } else if (keyCode == KeyEvent.VK_DOWN) {
-//                    if (canMove(0, 1)) currentY++;
-//                } else if (keyCode == KeyEvent.VK_UP) {
-//                    rotatePiece();
-//                }
-//
-//                repaint();
-//            }
-//        });
-//
-//        setFocusable(true);
-//    }
+    public TetrisGUI() {
+        setPreferredSize(new Dimension(BOARD_WIDTH * BLOCK_SIZE, BOARD_HEIGHT * BLOCK_SIZE));
+        spawnPiece();
+
+        addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (gameOver) return;
+
+                int keyCode = e.getKeyCode();
+                if (keyCode == KeyEvent.VK_LEFT) {
+                    if (canMove(-1, 0)) currentX--;
+                } else if (keyCode == KeyEvent.VK_RIGHT) {
+                    if (canMove(1, 0)) currentX++;
+                } else if (keyCode == KeyEvent.VK_DOWN) {
+                    if (canMove(0, 1)) currentY++;
+                } else if (keyCode == KeyEvent.VK_UP) {
+                    rotatePiece();
+                }
+
+                repaint();
+            }
+        });
+
+        setFocusable(true);
+    }
 //
 //    public void spawnPiece() {
 //        Random rand = new Random();
