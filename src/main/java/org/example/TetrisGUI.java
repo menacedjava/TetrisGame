@@ -21,12 +21,12 @@ public class TetrisGUI extends JPanel {
             {{1, 1, 0}, {1, 0, 0}},
             {{0, 1, 1}, {0, 0, 1}}
     };
-//    private int[][] currentShape;
-//    private int currentX, currentY;
-//    private boolean gameOver = false;
-//
-//
-//    private final int BLOCK_SIZE = 30;
+    private int[][] currentShape;
+    private int currentX, currentY;
+    private boolean gameOver = false;
+
+
+    private final int BLOCK_SIZE = 30;
 
 //    public TetrisGUI() {
 //        setPreferredSize(new Dimension(BOARD_WIDTH * BLOCK_SIZE, BOARD_HEIGHT * BLOCK_SIZE));
