@@ -9,18 +9,18 @@ import java.util.Random;
 public class TetrisGUI extends JPanel {
 
 
-//    private static final int BOARD_WIDTH = 10;
-//    private static final int BOARD_HEIGHT = 20;
-//    private int[][] board = new int[BOARD_HEIGHT][BOARD_WIDTH];
-//    private int[][][] shapes = {
-//            {{1, 1, 1, 1}},
-//            {{1, 1}, {1, 1}},
-//            {{1, 1, 0}, {0, 1, 1}},
-//            {{0, 1, 1}, {1, 1, 0}},
-//            {{1, 1, 1}, {0, 1, 0}},
-//            {{1, 1, 0}, {1, 0, 0}},
-//            {{0, 1, 1}, {0, 0, 1}}
-//    };
+    private static final int BOARD_WIDTH = 10;
+    private static final int BOARD_HEIGHT = 20;
+    private int[][] board = new int[BOARD_HEIGHT][BOARD_WIDTH];
+    private int[][][] shapes = {
+            {{1, 1, 1, 1}},
+            {{1, 1}, {1, 1}},
+            {{1, 1, 0}, {0, 1, 1}},
+            {{0, 1, 1}, {1, 1, 0}},
+            {{1, 1, 1}, {0, 1, 0}},
+            {{1, 1, 0}, {1, 0, 0}},
+            {{0, 1, 1}, {0, 0, 1}}
+    };
 //    private int[][] currentShape;
 //    private int currentX, currentY;
 //    private boolean gameOver = false;
